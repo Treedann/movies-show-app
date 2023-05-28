@@ -4,18 +4,18 @@
     .swiper-slide {
         width: 15%;
         display: inline-flex;
-        margin: 0 20px 0 0;
+        margin: 0 22px 0 0;
 
         @include tablet {
             width: 30%;
             display: inline-flex;
-            margin: 8px;
+            margin: 10px;
         }
 
         @include mobile {
             width: 40%;
             display: inline-flex;
-            margin: 18px;
+            margin: 20px;
         }
     }
 }
