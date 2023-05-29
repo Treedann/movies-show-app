@@ -36,10 +36,24 @@ const Home = () => {
             </div>
 
             <div className="container">
+                <div className="container">
+                    <div className="section mb-3">
+                        <div className="section__header mb-2">
+                            <h2>Upcoming Movies</h2>
+                            <Link to="/movie">
+                                <OutlineButton className="small">View more</OutlineButton>
+                            </Link>
+                        </div>
+                        <MovieList category={category.movie} type={movieType.upcoming} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="container">
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Trending TV</h2>
-                        <Link to="/movie">
+                        <Link to="/tv">
                             <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
@@ -51,7 +65,7 @@ const Home = () => {
                 <div className="section mb-3">
                     <div className="section__header mb-2">
                         <h2>Top Rated TV</h2>
-                        <Link to="/movie">
+                        <Link to="/tv">
                             <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
@@ -59,7 +73,17 @@ const Home = () => {
                 </div>
             </div>
 
-
+            <div className="container">
+                <div className="section mb-3">
+                    <div className="section__header mb-2">
+                        <h2>On the AirTV</h2>
+                        <Link to="/tv">
+                            <OutlineButton className="small">View more</OutlineButton>
+                        </Link>
+                    </div>
+                    <MovieList category={category.tv} type={tvType.on_the_air} />
+                </div>
+            </div>
         </div>
     )
 }
