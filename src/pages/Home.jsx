@@ -76,7 +76,7 @@ const Home = () => {
             <div className="container">
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>On the AirTV</h2>
+                        <h2>On the Air TV</h2>
                         <Link to="/tv">
                             <OutlineButton className="small">View more</OutlineButton>
                         </Link>

@@ -29,7 +29,7 @@ const MovieList = props => {
             } else {
                 response = await tmdbApi.similar(props.category, props.id);
             }
-            setItems(response.results.slice(6, 12));
+            setItems(response.results.slice(6, 18));
         }
         getList();
         //eslint-disable-next-line
